@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fancy Weather</title>
+  <link rel="stylesheet" href="/dist/main.css">
+</head>
+<body>
+	<header>
+		<section class="header_togglers">
+			<button id="new_image" type="button" name="button">&#x21BB;</button>
+			<div class="button-languages">
+			  <input id="check" type="checkbox"/>
+			  <label for="check">RU &#709;</label>
+			  <nav>
+			    <ul>
+			      <li>ru</li>
+			      <li>be</li>
+			      <li>en</li>
+			    </ul>
+			  </nav>
+			</div>
+			<div class="header_switcher">
+				<button id="Fahrenheit" class="degree" type="button">°F</button><button id="Celsius" class="degree" type="button">°C</button>
+			</div>
+			<div class="header_listen-forecast">
+				<button class="listen-forecast-button" type="button" name="button" id="speech-forecast">&#127911;</button>
+			</div>
+		</section>
+		<form id="header_form-search">
+			<input type="text" placeholder="Search City" autocomplete="off" id="search-field"><button type="button" name="button" id="search-button">search</button>
+            <button type="button" name="button" class="voice-search" id="voice-search">&#127908;</button>
+		</form>
+	</header>
+	<main id="main">
+		<section class="main_section" id="main_forecast">
+
+		</section>
+		<section class="main_section" id="main_geolacation">
+        <div id="map">
+
+        </div>
+        <div class="coordinates">
+
+        </div>
+		</section>
+	</main>
+  <script type="text/javascript" src="/dist/main.js"></script>
+</body>
+</html>

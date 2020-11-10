@@ -1,0 +1,67 @@
+nav {
+  display: block;
+  position: absolute;
+  margin-top: 6px;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(76,82,85,.7);
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-50px) scale(0.5);
+  transition: 0.2s;
+}
+nav a:hover {
+  background: #414141;
+  transition: 0.2s ease;
+}
+
+.button-languages {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#check {
+  display: none;
+}
+#check:checked ~ nav {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transform: translateY(0) scale(1);
+  transition: 0.2s;
+}
+#check:checked ~ label {
+  transform: scale(1);
+}
+
+label[for=check] {
+  background: rgba(174, 181, 185, 0.5);
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 8px;
+  font-family: "Montserrat Bold" , serif;
+  transition: 0.2s ease;
+}
+label:hover {
+  background: rgba(174, 181, 185, 0.8);
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  height: 80px;
+  padding: 0;
+  width: 58px;
+  color: #fff;
+}
+li {
+  height: 33%;
+  font-family: "Montserrat Regular", serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 130%;
+}

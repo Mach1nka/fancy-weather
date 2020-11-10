@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  color: #fff;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+button,
+input {
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat Regular", serif;
+}
+button {
+  font-family: "Montserrat Bold", serif;
+}
+input::placeholder{
+  color: #fff;
+  font-family: "Montserrat Regular", serif;
+}
+
+.disabled {
+  display: none;
+}

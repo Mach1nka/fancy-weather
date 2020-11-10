@@ -1,0 +1,172 @@
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main_section {
+  width: auto;
+}
+
+.location {
+  max-width: initial;
+  overflow-x: hidden;
+  font-size: 44px;
+  font-family: "Montserrat Bold", serif;
+}
+#time{
+  font-size: 24px;
+  font-family: "Montserrat Regular", serif;
+}
+#main_geolacation{
+  width: 300px;
+  height: 500px;
+  text-align: right;
+  margin-top: 100px;
+}
+#map {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.coordinate {
+  margin-top: 8px;
+  font-size: 20px;
+  font-family: "Montserrat Regular", serif;
+}
+.coordinates {
+  margin-top: 20px;
+}
+.section_forecast {
+  position: relative;
+}
+.section_forecast > img {
+  position: absolute;
+  width: 30%;
+  right: -10px;
+  top: -15px;
+}
+
+.section_forecast_temperature{
+  font-size: 19rem;
+  font-family: "Montserrat Bold", serif;
+}
+
+.section_forecast_temperature > span {
+  font-size: 100px;
+  position: absolute;
+  top: 50px;
+  z-index: 5;
+}
+
+.section_forecast_description {
+  width: auto;
+  display: inline-block;
+  margin-left: 15px;
+  height: auto;
+  text-align: left;
+}
+
+.section_forecast_for-days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section_forecast_for-day {
+  width: 194px;
+}
+.day-of-week {
+  display: block;
+  font-size: 22px;
+  font-family: "Montserrat Bold", serif;
+}
+.day-temperature{
+  font-size: 80px;
+  font-family: "Montserrat Regular", serif;
+}
+.section_forecast-day > img {
+  margin-bottom: 13px;
+}
+
+
+@media (min-width: 851px) {
+  #main_forecast {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    height: auto;
+  }
+  main {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .section_forecast > img {
+    width: 164px;
+    right: 62px;
+    top: -13px;
+  }
+  .section_forecast_description {
+    margin-left: 100px;
+  }
+  #main_geolacation {
+    margin-top: 55px;
+    width: auto;
+    text-align: center;
+  }
+  #map {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 675px) {
+  .section_forecast_temperature {
+    font-size: 200px;
+  }
+  .section_forecast > img {
+    position: static;
+    margin-bottom: 20px;
+    margin-right: -90px;
+    width: 90px;
+  }
+  .section_forecast_temperature > span {
+    top: 25px;
+  }
+  .day-temperature {
+    font-size: 60px;
+  }
+  .section_forecast-day > img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .location {
+    font-size: 37px;
+  }
+  .section_forecast_temperature {
+    font-size: 150px;
+  }
+  .section_forecast_description {
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+  .section_forecast > img {
+    margin-right: -20px;
+    margin-bottom: -15px;
+  }
+  .day-temperature {
+    font-size: 40px;
+  }
+  .section_forecast-day > img {
+    width: 40px;
+  }
+  .section_forecast_for-days {
+    margin-top: 15px;
+  }
+}

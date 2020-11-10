@@ -1,0 +1,8 @@
+const GEOLOCATION = "https://ipinfo.io/json?token=8f7884da8a2d5d";
+const WEATHER_API_KEY = "bf8b388e74a3477ab36224209202605";
+const IMAGES_API = "zt7W6Ff9fPHfTaDQV2WfGZUkC75Rc_6wqF46tvmsvGA";
+const GOOGLE_MAPS_API = "AIzaSyCKpqY_mWYOEf_x6Xd6UsiiGY_xufWwJl8";
+
+export {
+  GEOLOCATION, WEATHER_API_KEY, IMAGES_API, GOOGLE_MAPS_API,
+};

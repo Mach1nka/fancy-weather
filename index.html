@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fancy Weather</title>
-  <link rel="stylesheet" href="/dist/main.css">
+  <title>MovieSearch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 <body>
-	<header>
-		<section class="header_togglers">
-			<button id="new_image" type="button" name="button">&#x21BB;</button>
-			<div class="button-languages">
-			  <input id="check" type="checkbox"/>
-			  <label for="check">RU &#709;</label>
-			  <nav>
-			    <ul>
-			      <li>ru</li>
-			      <li>be</li>
-			      <li>en</li>
-			    </ul>
-			  </nav>
-			</div>
-			<div class="header_switcher">
-				<button id="Fahrenheit" class="degree" type="button">°F</button><button id="Celsius" class="degree" type="button">°C</button>
-			</div>
-			<div class="header_listen-forecast">
-				<button class="listen-forecast-button" type="button" name="button" id="speech-forecast">&#127911;</button>
-			</div>
-		</section>
-		<form id="header_form-search">
-			<input type="text" placeholder="Search City" autocomplete="off" id="search-field"><button type="button" name="button" id="search-button">search</button>
-            <button type="button" name="button" class="voice-search" id="voice-search">&#127908;</button>
-		</form>
-	</header>
-	<main id="main">
-		<section class="main_section" id="main_forecast">
-
-		</section>
-		<section class="main_section" id="main_geolacation">
-        <div id="map">
-
-        </div>
-        <div class="coordinates">
-
-        </div>
-		</section>
-	</main>
+  <header>
+    <div class="logo">
+      <h1>MovieSearch</h1>
+    </div>
+    <div class="header_form">
+      <div class="loading">
+        <div class="ring-2 dark">
+           <div class="ball-holder">
+              <div class="ball"></div>
+           </div>
+       </div>
+      </div>
+      <div class="search-icon lens">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="search-icon cross">
+        <i class="fas fa-times"></i>
+      </div>
+      <input type="text" placeholder="Search movie" id="search-field" autocomplete="off" autofocus>
+      <button type="button" name="search" id="search-button">Search</button>
+    </div>
+  </header>
+  <main>
+    <section id="main__error-field"></section>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    </div>
+    <div class="swiper-button-next" id="slider-next_button"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </main>
+  <footer>
+    <div class="footer_section">
+      <p>RS School 2020q1</p>
+    </div>
+    <div class="footer_section">
+      <a href="https://github.com/Mach1nka">Mach1nka</a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script type="text/javascript" src="/dist/main.js"></script>
 </body>
 </html>
